@@ -137,7 +137,11 @@ public class SimplePresentationScreen extends JFrame {
 		
 		
 		JLabel lblPFoto = new JLabel("");
-		lblPFoto.setIcon(new ImageIcon(new javax.swing.ImageIcon(getClass().getResource(studentData.getPathPhoto())).getImage().getScaledInstance(155, 155, Image.SCALE_SMOOTH)));
+		ImageIcon imageIcon = new ImageIcon(SimplePresentationScreen.class.getResource(studentData.getPathPhoto()));
+        Image imagen = imageIcon.getImage(); //conseguir imagen 
+        imagen = imagen.getScaledInstance(155,155,  java.awt.Image.SCALE_SMOOTH); // scale it the smooth way
+        imageIcon = new ImageIcon(imagen);  //cambiar la imagen del imageIcon
+        lblPFoto.setIcon(imageIcon);
 		contentPane.add(lblPFoto, BorderLayout.EAST);
 		
 	}

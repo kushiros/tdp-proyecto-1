@@ -10,7 +10,7 @@ public class Launcher {
 		
         javax.swing.SwingUtilities.invokeLater(new Runnable() {
             public void run() {
-            	Student Juan = new Student(130747, "Dominguez", "Juan Cruz", "jcdominguez01.jcd@gmail.com", "https://github.com/kushiros/tdp-proyecto-1", "/Images/kushis.jpg");
+            	Student Juan = new Student(130747, "Dominguez", "Juan Cruz", "jcdominguez01.jcd@gmail.com", "https://github.com/kushiros/tdp-proyecto-1", "/images/kushis.jpg");
         		
             	SimplePresentationScreen interfaz = new SimplePresentationScreen(Juan);
 				interfaz.setVisible(true);
