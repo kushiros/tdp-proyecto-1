@@ -38,7 +38,7 @@ public class SimplePresentationScreen extends JFrame {
 	private JTextField textField_URL;
 
 	public SimplePresentationScreen(Student studentData) {
-		setIconImage(Toolkit.getDefaultToolkit().getImage(SimplePresentationScreen.class.getResource("/images/tdp.png")));
+		
 		this.studentData = studentData;
 		
 		contentPane = new JPanel();
